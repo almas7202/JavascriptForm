@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2">
+        <form name="myForm">
+            <tr>
+                <td><label for="first_name">First Number</label></td>
+                <td>
+                    <input type="text" name="no1" id="no1" placeholder="Enter No1 :"><span id="error1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="first_name">Second Number</label></td>
+                <td>
+                    <input type="text" name="no2" id="no2" placeholder="Enter No2 :"> <span id="error2"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <input type="radio" name="calculator" value="addition">Addition 
+                <input type="radio" name="calculator" value="subtration">subtration 
+                <input type="radio" name="calculator" value="multiplication">multiplication 
+                <input type="radio" name="calculator" value="division">division 
+                <span id="error3"></span>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="validation()" value="submit">
+                </td>
+            </tr>
+
+        </form>
+    </table>
+
+    <p id="demo"></p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Validation</title>
+<script>
+function validateInput() {
+    var userInput = document.getElementById('userInput').value;
+    var isNumber = !isNaN(userInput);
+
+    if (isNumber) {
+        alert("Input is a valid number.");
+    } else {
+        alert("Input is not a valid number.");
+    }
+}
+</script>
+</head>
+<body>
+    <form>
+        <label for="userInput">Enter a number:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="button" onclick="validateInput()">Validate</button>
+    </form>
+</body>
+</html> -->
